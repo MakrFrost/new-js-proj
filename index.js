@@ -1,1 +1,4 @@
-console.log("это  нода, или ещё нет?");
+// console.log("это  нода");
+
+const { helloNode } = require("./node/nodeModule");
+helloNode();
