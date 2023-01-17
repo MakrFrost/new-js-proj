@@ -1,5 +1,5 @@
-function helloNode() {
-  console.log("Hello Node JS!");
-}
+// function helloNode() {
+//   console.log("Hello Node JS!");
+// }
 
-module.exports = { helloNode };
+// module.exports = { helloNode };

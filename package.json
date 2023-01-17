@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MakrFrost/new-js-proj/issues"
   },
-  "homepage": "https://github.com/MakrFrost/new-js-proj#readme"
+  "homepage": "https://github.com/MakrFrost/new-js-proj#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
