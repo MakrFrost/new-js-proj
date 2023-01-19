@@ -1,22 +1,13 @@
-// // console.log("это  нода");
-// // const { helloNode } = require("./node/nodeModule");
-// // helloNode();
+const [...itemsArr] = document.querySelectorAll(".items-need");
 
-// const { data } = require("./data");
+let Arr = [];
 
-// const http = require("http");
-// const PORT = 8888;
+itemsArr.map((item) => {
+  const title = item.childNodes[1].innerHTML;
+  const author = item.childNodes[3].innerHTML;
+  const img = item.childNodes[5].alt;
 
-// const requestHandler = (req, res) => {
-//   res.writeHead(200, { ContentType: "text/json" });
-//   res.end(JSON.stringify(data));
-// };
+  Arr.push({ title: title, author: author, img: img });
+});
 
-// const server = http.createServer(requestHandler);
-
-// server.listen(PORT, (err) => {
-//   if (err) {
-//     console.error(err);
-//   }
-//   console.log(`Server sucefully run on ${PORT}:port`);
-// });
+console.log(Arr);
