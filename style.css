@@ -1,0 +1,40 @@
+body {
+}
+
+main {
+}
+
+aside {
+  height: 150vh;
+}
+
+header {
+}
+
+footer {
+}
+
+.info {
+  height: 460px;
+}
+
+form {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.header_line {
+}
+
+.client_stories {
+  margin: var(--space-size);
+}
+
+.features {
+  background: var(--primary-color);
+  padding-top: var(--space-size);
+}
+
+h2 {
+}
