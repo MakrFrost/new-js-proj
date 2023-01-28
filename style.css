@@ -1,40 +1,146 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+.block {
+  width: 200px;
+  height: 75px;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+}
+.block1 {
+  background: #ff5733;
+  animation-name: bgcolor;
+  animation-duration: 5s;
+}
+.block2 {
+  animation-name: bgcolor2;
+  animation-duration: 4s;
+  background: #3393ff;
+}
+.block3 {
+  animation-name: blockmove;
+  animation-duration: 6s;
+  background: #33ff42;
+}
+.block4 {
+  animation-name: blockcolormove;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  animation-delay: 300ms;
+  background: #33fffc;
+}
+.block5 {
+  animation-name: showhide;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background: #ff33f6;
+}
+.block6 {
+  animation-name: blockmove;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  background: #30b851;
+}
+.block7 {
+  animation-name: blockcolormove;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  background: #303cb8;
+}
+.block8 {
+  animation-name: moveleft;
+  animation-duration: 5s;
+  background: #ec467b;
+}
+.block9 {
+  animation-name: moveleft;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  background: #e2ec46;
+}
+.block10 {
+  animation-name: moveleft;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  background: #ff1737;
 }
 
-main {
+@keyframes bgcolor {
+  from {
+    background-color: #ff5733;
+  }
+  to {
+    background-color: #3393ff;
+  }
 }
-
-aside {
-  height: 150vh;
+@keyframes bgcolor2 {
+  0% {
+    background-color: #3393ff;
+  }
+  50% {
+    background-color: #33ff42;
+  }
+  100% {
+    background-color: #30b851;
+  }
 }
-
-header {
+@keyframes blockmove {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 320px;
+    top: 0px;
+  }
+  50% {
+    left: 320px;
+    top: 320px;
+  }
+  75% {
+    left: 0px;
+    top: 320px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
-
-footer {
+@keyframes blockcolormove {
+  0% {
+    left: 0px;
+    top: 0;
+    background-color: #33fffc;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+    background-color: #30b851;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #33fffc;
+  }
 }
-
-.info {
-  height: 460px;
+@keyframes showhide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-
-form {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.header_line {
-}
-
-.client_stories {
-  margin: var(--space-size);
-}
-
-.features {
-  background: var(--primary-color);
-  padding-top: var(--space-size);
-}
-
-h2 {
+@keyframes moveleft {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
 }
