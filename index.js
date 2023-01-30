@@ -26,14 +26,3 @@
 
 // console.log(Arr);
 console.log("start");
-
-function countDigits(str, symbolsCount) {
-  let text = str.slice(-symbolsCount);
-
-  return `${text + str + text}`;
-}
-
-console.log(countDigits("asd", 3));
-console.log(countDigits("test", 3));
-console.log(countDigits("world", 5));
-console.log(countDigits("hello", 1));
