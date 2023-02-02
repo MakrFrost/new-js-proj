@@ -16,18 +16,14 @@
 }
 .slides-link {
   position: absolute;
+  border-radius: 10px;
   left: 50%;
   top: 70%;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  background: rgb(255, 50, 50);
-  background: linear-gradient(
-    27deg,
-    rgba(255, 50, 50, 1) 0%,
-    rgba(255, 152, 0, 1) 100%
-  );
-  padding: 15px;
-  font-size: 30px;
+  background: rgb(255, 96, 0);
+  padding: 10px;
+  font-size: 10px;
   font-weight: bold;
   transform: translate(-50%, -70%);
   text-shadow: -1px -1px 0 hsl(0, 0%, 32%), -2px -2px 1px hsl(0, 0%, 70%);
@@ -36,16 +32,13 @@
   color: black;
   background-color: white;
   transform: translate(-50%, -70%);
-  background: rgb(255, 166, 0);
-  background: linear-gradient(
-    27deg,
-    rgba(255, 152, 0, 1) 0%,
-    rgba(255, 50, 50, 1) 100%
-  );
+  background: rgba(255, 98, 0, 0.9);
   text-decoration: none;
 }
 .slides-link:active {
   text-decoration: none;
+  background: rgba(255, 98, 0, 0.7);
+  color: rgba(0, 0, 0, 0.705);
 }
 .slides-dots {
   text-align: center;
@@ -56,8 +49,8 @@
 }
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 8px;
+  width: 8px;
   margin: 0 2px;
   background: rgba(252, 176, 0, 0.644);
   background: radial-gradient(
@@ -109,12 +102,12 @@
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 7s;
 }
 @-webkit-keyframes fade {
   from {
     opacity: 0.8;
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
   to {
     transform: scale(1);
@@ -124,10 +117,31 @@
 @keyframes fade {
   from {
     opacity: 0.8;
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 760px) {
+  .slides-link {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slides-link {
+    padding: 25px;
+    font-size: 30px;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
   }
 }

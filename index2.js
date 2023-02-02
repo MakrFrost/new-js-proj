@@ -6,6 +6,8 @@ let dots = document.getElementsByClassName("dot");
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
+  clearTimeout(timer);
+  timer = setTimeout(carouselSlide, 7000);
 }
 function currentSlide(n) {
   showSlides((slideIndex = n));
