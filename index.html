@@ -8,49 +8,48 @@
   </head>
   <body>
     <main>
-      <div class="wp-block-jetpack-slideshow aligncenter" data-effect="slide">
-        <div class="wp-block-jetpack-slideshow_container swiper-container">
-          <ul class="wp-block-jetpack-slideshow_swiper-wrapper swiper-wrapper">
-            <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-              <figure>
-                <img
-                  alt="bicycle/велосипед"
-                  class="wp-block-jetpack-slideshow_image wp-image-72"
-                  data-id="72"
-                  src="http://www.state.pp.ua/wp-content/uploads/2023/01/1-1024x682.jpg"
-                />
-              </figure>
-            </li>
-            <li class="wp-block-jetpack-slideshow_slide swiper-slide">
-              <figure>
-                <img
-                  alt="bicycle/велосипед"
-                  class="wp-block-jetpack-slideshow_image wp-image-70"
-                  data-id="70"
-                  src="http://www.state.pp.ua/wp-content/uploads/2023/01/3-1-1024x683.jpg"
-                />
-              </figure>
-            </li>
-          </ul>
-          <a
-            class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white"
-            role="button"
-          ></a
-          ><a
-            class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white"
-            role="button"
-          ></a
-          ><a
-            aria-label="Pause Slideshow"
-            class="wp-block-jetpack-slideshow_button-pause"
-            role="button"
-          ></a>
-          <div
-            class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white"
-          ></div>
+      <div class="slideshow-container">
+        <div class="slides">
+          <div class="fade">
+            <img class="slides-img" src="./1.jpg" />
+          </div>
+          <a href="" class="slides-link">Кнопка2</a>
+        </div>
+
+        <div class="slides">
+          <div class="fade">
+            <img class="slides-img" src="./2.jpg" />
+          </div>
+          <a href="" class="slides-link">Кнопка2</a>
+        </div>
+
+        <div class="slides">
+          <div class="fade">
+            <img class="slides-img" src="./3.jpg" />
+          </div>
+          <a href="" class="slides-link">Кнопка3</a>
+        </div>
+
+        <div class="slides">
+          <div class="fade">
+            <img class="slides-img" src="./4.jpg" />
+          </div>
+          <a href="" class="slides-link">Кнопка4</a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="slides-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
         </div>
       </div>
     </main>
-    <script src="/index.js"></script>
+    <script src="/index2.js"></script>
   </body>
 </html>
