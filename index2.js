@@ -1,9 +1,7 @@
 let slideIndex = 0;
 let timer;
-
 let slides = document.getElementsByClassName("slides");
 let dots = document.getElementsByClassName("dot");
-
 function plusSlides(n) {
   showSlides((slideIndex += n));
   clearTimeout(timer);
@@ -50,3 +48,9 @@ function carouselSlide() {
 }
 carouselSlide();
 showSlides(slideIndex);
+
+// !
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
