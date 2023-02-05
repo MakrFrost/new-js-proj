@@ -10,6 +10,7 @@
 .slides {
   display: none;
 }
+
 .slides-img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.705);
@@ -48,27 +49,34 @@
   right: 50%;
   transform: translateX(50%);
 }
+/* ! */
 .dot {
+  position: relative;
   cursor: pointer;
-  height: 10px;
-  min-width: 40px;
-  margin: 0 2px;
-  background-color: #777;
+  height: 6px;
+  min-width: 20px;
+  margin: 0 4px;
+  background-color: #414040;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: all 0.3s ease-in-out;
 }
 .dot:hover {
-  background: rgb(252, 178, 0);
+  transform: scaleY(1.2);
 }
-.animation {
-  max-width: 40px;
-  height: 10px;
-  background-color: #ff6005;
-  -webkit-animation-name: bcg-dot;
-  -webkit-animation-duration: 2.5s;
-  animation-name: bcg-dot;
-  animation-duration: 7s;
+.dot::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #ff6005;
+  position: absolute;
+  left: 0;
 }
+.active::before {
+  transition: width 7s linear;
+  width: 100%;
+}
+/* ! */
 .prev,
 .next {
   cursor: pointer;
@@ -126,7 +134,7 @@
     font-size: 20px;
   }
   .dot {
-    height: 10px;
+    height: 8px;
     min-width: 40px;
   }
 }
@@ -137,13 +145,13 @@
   }
   .dot {
     height: 10px;
-    min-width: 40px;
+    min-width: 60px;
   }
 }
 
 /* ! */
 
-.colors {
+/* .colors {
   margin-top: 100px;
   display: flex;
   margin-bottom: 100px;
@@ -171,74 +179,6 @@
 }
 .color6 {
   background-color: #f7f7f7;
-}
+} */
 
 /* ! */
-
-.spaces-gal .owl-dots {
-  width: 100%;
-  margin: 10px auto;
-  text-align: center;
-}
-.spaces-gal .owl-dot {
-  height: 10px;
-  width: 40px;
-  background-color: #ff5722 !important;
-  display: inline-block;
-  border-radius: 0;
-  opacity: 1;
-  transition: 0.3s;
-  margin: 0 5px;
-}
-.spaces-gal .owl-dot.active {
-  background-color: #e1e1e1 !important;
-  opacity: 1;
-  width: 40px;
-  position: relative;
-}
-.spaces-gal .owl-dot.active ~ .owl-dot {
-  background: #e1e1e1 !important;
-}
-.spaces-slide {
-  position: relative;
-}
-.spaces-slide img {
-  width: 500px;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-}
-.spaces-gal .owl-dot.active::before {
-  content: " ";
-  background-color: #ff5722;
-  -webkit-animation: backgroundLinera 5s linear;
-  animation: backgroundLinera 5s linear;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  border-radius: 2px;
-}
-@keyframes backgroundLinera {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 50%;
-  }
-  to {
-    width: 100%;
-  }
-}
-.spaces-gal button {
-  appearance: none;
-  background: transparent;
-  border: 0px;
-  text-align: center;
-  position: relative;
-  display: block;
-  width: inherit;
-  margin-top: 1em;
-}

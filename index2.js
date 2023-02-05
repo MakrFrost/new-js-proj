@@ -31,7 +31,6 @@ function showSlides(n) {
 }
 function carouselSlide() {
   let i;
-  let slides = document.getElementsByClassName("slides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -43,6 +42,7 @@ function carouselSlide() {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
+
   dots[slideIndex - 1].className += " active";
   timer = setTimeout(carouselSlide, 7000);
 }
@@ -50,7 +50,3 @@ carouselSlide();
 showSlides(slideIndex);
 
 // !
-
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
-});
