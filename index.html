@@ -7,33 +7,161 @@
     <title>CSS Layouts</title>
   </head>
   <body>
+    <!-- !  -->
+
+    <div class="footer-main">
+      <div class="container footer-container">
+        <div class="flex-container">
+          <section class="footer-info">
+            <h4 class="footer-info__title hide"><b>Інформація</b></h4>
+            <svg
+              class="footer-svg__info"
+              viewBox="0 0 10 10"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10px"
+            >
+              <path
+                d="M4.505 7.645l-4.3-4.3a.7.7 0 11.99-.99L5 6.16l3.805-3.805a.7.7 0 01.99.99l-4.3 4.3a.698.698 0 01-.99 0z"
+              ></path>
+            </svg>
+            <ul class="footer-info__list footer-info__list-hide">
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">Оплата і доставка</a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">Майстерня</a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">Контакти</a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link"
+                  >Калькулятор скідпатчів<br />
+                  та співвідношення</a
+                >
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">Блог</a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">Акції</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contacts">
+            <h4 class="footer-contacts__title hide"><b>Контакти</b></h4>
+            <svg
+              class="footer-svg__contacts"
+              viewBox="0 0 10 10"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10px"
+            >
+              <path
+                d="M4.505 7.645l-4.3-4.3a.7.7 0 11.99-.99L5 6.16l3.805-3.805a.7.7 0 01.99.99l-4.3 4.3a.698.698 0 01-.99 0z"
+              ></path>
+            </svg>
+            <ul class="footer-contacts__list footer-contacts__list-hide">
+              <li class="footer-contacts__item">+3809551488</li>
+              <li class="footer-contacts__item">+3809551228</li>
+              <li class="footer-contacts__item">+3809551499</li>
+              <li class="footer-contacts__item">+3809551400</li>
+            </ul>
+            <div class="footer-contacts__mail">
+              <img
+                src="https://icons.iconarchive.com/icons/iconsmind/outline/256/Mail-icon.png"
+                class="footer-contacts__img"
+                alt="email"
+              />
+              <a class="footer-contacts__link" href="mailto:fixacia@gmail.com"
+                >fixacia@gmail.com</a
+              >
+            </div>
+            <div class="footer-contacts__work">
+              <div class="footer-work-wrap">
+                <img
+                  src="https://www.svgrepo.com/show/415299/timer-clock-alarm-time-watch.svg"
+                  class="footer-contacts__img"
+                  alt="work timer"
+                />
+                Часи роботи:
+              </div>
+              <div class="footer-work-text">
+                <span><b>Пн-Сб</b>08:00 - 18:00</span> <br />
+                <span><b>Неділя</b>Вихідний</span>
+              </div>
+            </div>
+          </section>
+          <section class="footer-block">
+            <h4 class="footer-block__title"><b>FIXACIA Team</b></h4>
+            <img
+              class="footer-block__img"
+              src="http://www.state.pp.ua/wp-content/uploads/2023/01/cropped-logo_fixacia105px.png"
+              alt="Fixacia Logo"
+            />
+            <div class="footer-contacts__social">
+              <p class="footer-contacts__text">
+                <b>Долучайся до нас! </b><br />
+                Читай більше про наші товари,<br />
+                дізнавайся про новинки та знижки!
+              </p>
+
+              <ul class="footer-contacts__items">
+                <li class="footer-contacts__links">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-contacts__socials"
+                    >Telegram
+                    <img
+                      src="https://www.svgrepo.com/show/354443/telegram.svg"
+                      class="footer-contacts__img"
+                      alt="link image"
+                  /></a>
+                </li>
+                <li class="footer-contacts__links">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-contacts__socials"
+                    >Instagram
+                    <img
+                      src="https://www.svgrepo.com/show/452229/instagram-1.svg"
+                      class="footer-contacts__img"
+                      alt="link image"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="footer-wrap__text">
+          © 2023
+          <a class="footer-wrap__link" href="#">FIXACIA</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! -->
     <main>
-      <div class="slideshow-container">
+      <!-- <div class="slideshow-container">
         <div class="slides">
-          <div class="fade">
-            <img class="slides-img" src="./1.jpg" />
-          </div>
+          <img class="slides-img" src="./1.jpg" />
           <a href="" class="slides-link">Кнопка1</a>
         </div>
-
         <div class="slides">
           <div class="fade">
             <img class="slides-img" src="./2.jpg" />
           </div>
           <a href="" class="slides-link">Кнопка2</a>
         </div>
-
         <div class="slides">
-          <div class="fade">
-            <img class="slides-img" src="./3.jpg" />
-          </div>
+          <img class="slides-img" src="./3.jpg" />
           <a href="" class="slides-link">Кнопка3</a>
         </div>
-
         <div class="slides">
-          <div class="fade">
-            <img class="slides-img" src="./4.jpg" />
-          </div>
+          <img class="slides-img" src="./4.jpg" />
           <a href="" class="slides-link">Кнопка4</a>
         </div>
 
@@ -46,7 +174,7 @@
           <span class="dot" onclick="currentSlide(3)"></span>
           <span class="dot" onclick="currentSlide(4)"></span>
         </div>
-      </div>
+      </div> -->
       <!-- ! -->
       <!-- <div class="colors">
         <div class="color color1">Основные акцентные цвета</div>
@@ -57,6 +185,6 @@
         <div class="color color6">фон меню</div>
       </div> -->
     </main>
-    <script src="/index2.js"></script>
+    <script defer src="/index2.js"></script>
   </body>
 </html>
