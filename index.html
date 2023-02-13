@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>CSS Layouts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- !  -->
 
-    <div class="footer-main">
+    <!-- <div class="footer-main">
       <div class="container footer-container">
         <div class="flex-container">
           <section class="footer-info">
@@ -141,19 +147,51 @@
           <a class="footer-wrap__link" href="#">FIXACIA</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- ! -->
     <main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="slides-img" src="./2.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 1</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slides-img" src="./3.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 2</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slides-img" src="./4.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 3</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slides-img" src="./2.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 4</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slides-img" src="./3.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 5</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slides-img" src="./4.jpg" alt="bycicle photo" />
+            <a href="" class="slides-link">Кнопка 1</a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- !-->
       <!-- <div class="slideshow-container">
         <div class="slides">
           <img class="slides-img" src="./1.jpg" />
           <a href="" class="slides-link">Кнопка1</a>
         </div>
         <div class="slides">
-          <div class="fade">
-            <img class="slides-img" src="./2.jpg" />
-          </div>
+          <img class="slides-img" src="./2.jpg" />
           <a href="" class="slides-link">Кнопка2</a>
         </div>
         <div class="slides">
@@ -185,6 +223,6 @@
         <div class="color color6">фон меню</div>
       </div> -->
     </main>
-    <script defer src="/index2.js"></script>
+    <script type="module" src="/index2.js"></script>
   </body>
 </html>
